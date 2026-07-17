@@ -1,0 +1,105 @@
+.services {
+  padding: 120px 0;
+}
+
+.services-header {
+  margin-bottom: 80px;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+  border-top: 1px solid var(--clr-gray);
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.service-item:last-child {
+  border-bottom: 1px solid var(--clr-gray);
+}
+
+.service-item:hover {
+  background-color: rgba(215, 238, 221, 0.2); /* Very light green on hover */
+}
+
+.service-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.service-title {
+  font-size: clamp(2rem, 3.5vw, 3.5rem); /* ~56px */
+  margin-left: 300px;
+}
+
+.service-subtitle {
+  font-size: clamp(1.2rem, 2vw, 1.875rem); /* ~30px */
+  color: var(--clr-black);
+  max-width: 300px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.service-arrow {
+  color: var(--clr-black);
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.service-arrow.active {
+  transform: translateX(10px);
+}
+
+.service-hover-art {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.service-hover-art.visible {
+  opacity: 1;
+}
+
+.abstract-art-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: conic-gradient(from 180deg at 50% 50%, var(--clr-yellow) 0deg, var(--clr-red) 180deg, var(--clr-green) 360deg);
+}
+
+@media (max-width: 1024px) {
+  .service-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .service-subtitle {
+    position: static;
+    transform: none;
+    max-width: 100%;
+  }
+  
+  .service-title {
+    margin-left: 0;
+  }
+  
+  .service-hover-art {
+    display: none;
+  }
+}
