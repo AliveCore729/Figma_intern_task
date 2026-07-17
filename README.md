@@ -1,16 +1,45 @@
-# React + Vite
+# Elementum - React Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This is a responsive, pixel-perfect React application built from a Figma design assignment. It implements the provided design specs with clean architecture, proper component reusability, and strong attention to spacing and layout.
 
-Currently, two official plugins are available:
+## Tech Stack
+- **React (via Vite)** - Fast development server and optimized build.
+- **Vanilla CSS** - Used for styling to demonstrate strong fundamental CSS skills, complete with variables and responsive design rules.
+- **Lucide React** - Used for scalable, modern iconography.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- **Responsive Layout**: Adapts smoothly to mobile, tablet, and desktop viewports.
+- **Modern Typography**: Uses high-quality Google Fonts (`Outfit` for headings and `Inter` for body text).
+- **Interactions & Animations**: Features subtle, meaningful animations like floating background avatars, pulsing shapes, and interactive hover states.
+- **Vercel Ready**: Contains a `vercel.json` configuration for immediate, zero-config deployment to Vercel.
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed.
 
-## Expanding the Oxlint configuration
+### Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AliveCore729/Figma_intern_task.git
+   cd Figma_intern_task
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Build for production:
+   ```bash
+   npm run build
+   ```
+
+## Deployment
+This project is configured to deploy seamlessly on Vercel. Simply import the repository in your Vercel dashboard and the platform will automatically detect and deploy the Vite React app.
